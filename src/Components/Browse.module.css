@@ -28,3 +28,9 @@
   color: white;
   box-shadow: var(--primary-color) 0 0 0 1px;
 }
+.browseCards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content:space-evenly;
+}
