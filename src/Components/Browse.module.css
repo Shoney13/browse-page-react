@@ -1,0 +1,29 @@
+.browseMain{
+  display: flex;
+  flex-direction: column;
+}
+.browseSelector{
+  margin: 2rem;
+  box-shadow: var(--primary-color) 0 0 0 2px;
+  align-self: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.browseButton{
+  background: none ;
+  border: none;
+  padding: 0.2rem 1.3rem;
+  transition: all 200ms ease;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+.browseButton.active{
+  background-color: var(--primary-color);
+  border-radius: 50px;
+  color: white;
+  box-shadow: var(--primary-color) 0 0 0 1px;
+}
