@@ -1,0 +1,63 @@
+.NavBarMain{
+  padding: 0 20px;
+  background: #fff;
+  box-shadow: 0 0 10px 1px rgb(0 0 0 / 20%);
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  display: flex;
+  gap: 1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 102;
+  align-items: center;
+  height: 68px;
+  justify-content: space-between;
+}
+.NavBarLogo{
+  background-image: url('../assets/beyond-exams-logo.svg');
+  height: 67px;
+    width: 107px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.NavBarSearchArea{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 0.5rem;
+  border-radius: 50px;
+  background-color: var(--background-color);
+}
+.NavBarSearchIcon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  border: none;
+  color: white;
+}
+.NavBarCoursesButton{
+outline: none;
+border: none;
+  background: white;
+  font-size: 13px;
+  padding: 8px 15px;
+  border-radius: 1rem;
+  margin-right: auto;
+  margin-left: 1rem;
+}
+.NavBarCoursesButton:hover{
+  color: var(--primary-color);
+}
+
+.NavBarServicesButton{
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  margin-right: 1rem;
+}
