@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Browse.module.css";
+import CourseCard from "./CourseCard";
 const Browse = () => {
   const [currentBrowse, setCurrentBrowse] = useState("learn");
   return (
@@ -22,6 +23,7 @@ const Browse = () => {
           Revise Your Syllabus
         </button>
       </div>
+      <CourseCard/>
     </div>
   );
 };
