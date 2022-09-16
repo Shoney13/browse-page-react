@@ -3,6 +3,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import styles from './NavBar.module.css'
 import ProfileIcon from './ProfileIcon'
+import MenuIcon from '@mui/icons-material/Menu';
 const NavBar = () => {
   const [isSearchActive, setIsSearchActive] = useState(false);
 
@@ -12,8 +13,9 @@ const NavBar = () => {
 
   return (
     <div className={styles.NavBarMain}>
-      <div className={styles.NavBarLogo} />
-      <div className={styles.NavBarSearchArea}>
+      <span className={`${styles.NavBarMenu} ${isSearchActive ? styles.searchActive : ''}`}><MenuIcon/></span>
+      <div className={`${styles.NavBarLogo} ${isSearchActive ? styles.searchActive : ''}`} />
+      <div className={`${styles.NavBarSearchArea} ${isSearchActive ? styles.searchActive : ''}`}>
         <input type="text" className={`${styles.NavBarSearchInput} ${isSearchActive ? styles.searchActive : ''}`} placeholder='What do you want to learn today?'/>
         <button className={`${styles.NavBarSearchIcon} ${isSearchActive ? styles.searchActive : ''}`} onClick={handleSearchClick}> 
           <SearchIcon />

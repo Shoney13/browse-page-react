@@ -1,8 +1,8 @@
-.NavBarMain{
+.NavBarMain {
   padding: 0 20px;
   background: #fff;
   box-shadow: 0 0 10px 1px rgb(0 0 0 / 20%);
-  border-bottom: 1px solid rgba(0,0,0,.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   display: flex;
   gap: 1rem;
   position: -webkit-sticky;
@@ -13,15 +13,18 @@
   height: 68px;
   justify-content: space-between;
 }
-.NavBarLogo{
-  background-image: url('../assets/beyond-exams-logo.svg');
-  height: 67px;
-    width: 107px;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: contain;
+.NavBarMenu{
+  display: none;
 }
-.NavBarSearchArea{
+.NavBarLogo {
+  background-image: url("../assets/beyond-exams-logo.svg");
+  height: 67px;
+  width: 107px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.NavBarSearchArea {
   display: flex;
   width: 100%;
   align-items: center;
@@ -30,7 +33,7 @@
   border-radius: 50px;
   background-color: var(--background-color);
 }
-.NavBarSearchIcon{
+.NavBarSearchIcon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,30 +44,30 @@
   border: none;
   color: white;
 }
-.NavBarSearchIcon.searchActive{
+.NavBarSearchIcon.searchActive {
   margin-left: -3rem;
   margin-right: 1rem;
 }
-.NavBarSearchInput{
-  border:none;
-  background-image:none;
-  background-color:transparent;
+.NavBarSearchInput {
+  border: none;
+  background-image: none;
+  background-color: transparent;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
   background-color: white;
   width: 0px;
-  transition: all 300ms ease;
+  transition: width 300ms ease;
   border-radius: 50px;
 }
-.NavBarSearchInput.searchActive{
+.NavBarSearchInput.searchActive {
   padding: 1rem 0.5rem;
   width: 100%;
   box-shadow: 0 4px 9px rgb(0 0 0 / 25%);
 }
-.NavBarCoursesButton{
-outline: none;
-border: none;
+.NavBarCoursesButton {
+  outline: none;
+  border: none;
   background: white;
   font-size: 13px;
   padding: 8px 15px;
@@ -72,17 +75,45 @@ border: none;
   margin-right: auto;
   margin-left: 1rem;
 }
-.NavBarCoursesButton.searchActive,.NavBarServicesButton.searchActive{
+.NavBarCoursesButton.searchActive,
+.NavBarServicesButton.searchActive {
   display: none;
 }
 
-.NavBarCoursesButton:hover{
+.NavBarCoursesButton:hover {
   color: var(--primary-color);
 }
 
-.NavBarServicesButton{
+.NavBarServicesButton {
   display: flex;
   align-items: center;
   font-size: 13px;
   margin-right: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .NavBarCoursesButton,
+  .NavBarServicesButton {
+    display: none;
+  }
+  .NavBarLogo {
+    background-image: url("../assets/beyond-exams-logo-mobile.svg");
+    width: 50px;
+  }
+  .NavBarSearchArea{
+    width: auto;
+    padding: 0;
+  }
+  .NavBarMenu{
+    display: block;
+  }
+  .NavBarLogo.searchActive,.NavBarMenu.searchActive{
+    display: none;
+  }
+  .NavBarSearchArea.searchActive{
+    width: 100%;
+  }
+  .NavBarSearchIcon.searchActive{
+    margin-right: 0;
+  }
 }
