@@ -13,6 +13,16 @@
 }
 .CourseCardImage{
   width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 10px 10px 0px 0px;
+}
+.CourseCardTitleArea{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .CourseCardTitle{
   font-size: 14px;
@@ -20,6 +30,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .CourseCardDescription{

@@ -33,7 +33,7 @@ const Browse = () => {
         </button>
       </div>
       <div className={`${styles.browseCards}`}>
-        {skillData.length > 0 ? skillData.map((course, index)=><CourseCard src={course.image_url} title={course.title} count={course.video_count}/>) : 'Loading...'}
+        {skillData.length > 0 ? skillData.map((course, index)=><CourseCard src={course.image_url} title={course.title} count={course.num_topics}/>) : 'Loading...'}
       </div>
     </div>
   );
