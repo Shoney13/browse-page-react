@@ -34,3 +34,12 @@
   gap: 1rem;
   justify-content:space-evenly;
 }
+
+@media screen and (max-width: 600px){
+  .browseSelector{
+    align-self: center;
+  }
+  .browseButton{
+    font-size: 0.8rem;
+  }
+}
