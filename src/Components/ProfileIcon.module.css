@@ -5,10 +5,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid rgb(102, 70, 231);
   position: relative;
 }
-
+.profileIconMain.student{
+  border: 2px solid rgb(102, 70, 231);
+}
+.profileIconMain.teacher{
+  border: 2px solid red;
+}
 .profileIconImage{
   max-width: 100%;
 }
@@ -19,7 +23,6 @@
   left: -5px;
   font-size: 14px;
   font-weight: 600;
-  background-color: rgb(102, 70, 231);
   border-radius: 50%;
   width: 20px;
   height: 20px;
@@ -30,6 +33,12 @@
   border: 2px solid var(--background-color);
 }
 
+.profileIconType.student{
+  background-color: rgb(102, 70, 231);
+}
+.profileIconType.teacher{
+  background-color: red;
+}
 @media screen and (max-width: 600px) {
   .profileIconMain{
     display: none;
