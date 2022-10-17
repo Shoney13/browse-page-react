@@ -14,8 +14,8 @@ const Browse = () => {
             "https://api.beyondexams.org/api/v1/get_next_level_topics?level=1&parent_id=0"
           )
           .then((res) => {
-            console.log("skillData", res.data.data.data);
-            setSkillData(res.data.data.data);
+            console.log("skillData", res);
+            setSkillData(res.data.data.topics.data);
           });
       }
     } else {
@@ -25,7 +25,7 @@ const Browse = () => {
             "https://api.beyondexams.org/api/v1/get_courses?level=1&parent_id=0"
           )
           .then((res) => {
-            console.log("syllabusData", res.data.data.courses.data);
+            console.log("syllabusData", res);
             setSyllabusData(res.data.data.courses.data);
           });
       }
